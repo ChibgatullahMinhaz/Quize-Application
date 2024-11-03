@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.initial_page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.initial_page img {
+    width: 100%;
+    max-width: 800px; 
+}
+
+.initial_page button {
+    background-color: rgba(53, 189, 58, 1);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.quiz {
+    display: none; 
+}
+
+.Result{
+    display: none;
+}
