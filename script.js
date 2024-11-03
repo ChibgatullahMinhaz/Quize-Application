@@ -6,7 +6,7 @@ const musicToggle = document.getElementById("toogleImg");
 
 // Ensure localStorage has initial values
 if (localStorage.getItem("isMusicPlaying") === null) {
-    localStorage.setItem("isMusicPlaying", "false");
+    localStorage.setItem("isMusicPlaying", "true");
 }
 
 // Function to hide the home page and show the quiz page
@@ -26,8 +26,6 @@ if (localStorage.getItem("isHomePageHidden") === "true") {
     homePage.style.display = "block";
     quizPage.style.display = "none";
 }
-
-// Start button event listener
 startBtn.addEventListener('click', hideHomePage);
 
 // Music control 
@@ -38,7 +36,7 @@ if (localStorage.getItem("isMusicPlaying") === "true") {
     musicToggle.src = "img/Volume_Mute_.svg"; 
 }
 
-// Toggle music on image click
+// Toggle music 
 musicToggle.addEventListener("click", () => {
     if (backgroundMusic.paused) {
         backgroundMusic.play();
