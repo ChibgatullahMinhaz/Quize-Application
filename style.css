@@ -33,8 +33,26 @@
 
 .quiz {
     display: none; 
+    background-color:  #CCe2c2;
+    height: 100vh;
 }
+.quizContainer{
+    max-width: 70%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.logo{
+    width: 13%;
+}
+#QuizLogo{
+    display: flex;
+    justify-content: space-between;
+}
+#QuizLogo img{
+    margin-top: 20px;
 
+}
 .Result{
     display: none;
 }
