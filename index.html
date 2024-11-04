@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="img/quizeWelcome.png" type="image/x-icon">
+    <link rel="stylesheet" href="test.css">
     <title>Quiz Application</title>
 </head>
 <body>
+
+    <!-- Initial Welcome Page -->
     <div class="initial_page" id="homePage">
-        <img src="img/quizeWelcome.png" alt="StartQuiz">
-        <div class="btn">
-            <button type="button" id="startBtn">Start Now >>></button>
-        </div>
+        <h1>Welcome to the Quiz</h1>
+        <img id="homeimg" src="img/quizeWelcome.png" alt="Start Quiz">
+        <button id="startBtn">Start Now >>></button>
     </div>
 
-
-    <section class="quiz" id="quizPage">
-        <div class="quizContainer">
+    <!-- Quiz Section -->
+    <section id="quizPage" class="quiz" style="display: none;">
+        <div id="quizContainer">
             <div id="QuizLogo">
                 <img class="logo" src="img/quizeWelcome.png" alt="logo">
-                <img id="toogleImg" src="img/🦆 icon _Volume Up_.svg" alt="music">
+                <img id="toggleImg" src="img/Volume_Up_.svg" alt="music">
                 <audio id="backgroundMusic" src="music/QuizBackground.mp3" loop></audio>
             </div>
 
+            <!-- total Quistion calculation -->
+            <div id="questionCounter" class="questionCounter">
+                <span id="currentQuestionNumber"></span> / <span id="totalQuestions"></span>
+                <p id="timer">30</p>
+
+            </div>
+            
+            <h1 class="qzQuestion" id="question"></h1>
+            <ul id="answers">
+                <li><button class="answerBtn" data-answer="a">Answer A</button></li>
+                <li><button class="answerBtn" data-answer="b">Answer B</button></li>
+                <li><button class="answerBtn" data-answer="c">Answer C</button></li>
+                <li><button class="answerBtn" data-answer="d">Answer D</button></li>
+            </ul>
+            <button id="nextBtn">Next</button>
+            <button id="exitQuizBtn">Exit Quiz</button>
+
+            <p id="scoreDisplay">Score: 0</p>
         </div>
-      
+
+        <!-- Audio for Correct and Wrong Answers -->
+        <audio id="correctSound" src="music/correct.mp3"></audio>
+        <audio id="wrongSound" src="music/wrong.mp3"></audio>
     </section>
 
-    <section class="Result" id="resultPage">
-        <h1>Result </h1>
-    </section>
+    <!-- Result Page -->
+    <div id="resultPage" class="result" style="display: none;">
+        
+        <h2>Your Score: <span id="finalScore"></span></h2>
+        <button id="restartBtn">Restart Quiz</button>
+    </div>
 
+    <script src="test.js" defer></script>
 </body>
 </html>
