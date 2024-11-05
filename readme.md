@@ -1,1 +1,1 @@
-# [Live Link] ("https://chibgatullahminhaz.github.io/Quize-Application/")
+[Live Link] (https://chibgatullahminhaz.github.io/Quize-Application/)
