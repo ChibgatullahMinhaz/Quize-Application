@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Quiz Application</title>
 </head>
+
 <body>
 
     <!-- Initial Welcome Page -->
     <div class="initial_page" id="homePage">
-        <h1>Welcome to the Quiz</h1>
         <img id="homeimg" src="img/quizeWelcome.png" alt="Start Quiz">
         <button id="startBtn">Start Now >>></button>
     </div>
@@ -31,7 +32,7 @@
                 <p id="timer">30</p>
 
             </div>
-            
+
             <h1 class="qzQuestion" id="question"></h1>
             <ul id="answers">
                 <li><button class="answerBtn" data-answer="a">Answer A</button></li>
@@ -51,12 +52,26 @@
     </section>
 
     <!-- Result Page -->
-    <div id="resultPage" class="result" style="display: none;">
-        
-        <h2>Your Score: <span id="finalScore"></span></h2>
-        <button id="restartBtn">Restart Quiz</button>
+    <div id="resultPage"  style="display: none;">
+        <div class="result">
+            <img class="logoImage" src="img/quizeWelcome.png" alt="icon">
+            <h4>Result</h4>
+            <h2>Your Score: <span id="finalScore"></span></h2>
+            <p>Keep learning</p>
+            <button id="restartBtn"><<< Retry</button>
+            <div class="share">
+                <h2>Share your score:</h2>
+                <div class="socalIcon">
+                    <img src="img/🦆 icon _Instagram Square_.png" alt="Instagram">
+                    <img src="img/🦆 icon _LinkedIn_.png" alt="LinkdIn">
+                    <img src="img/🦆 iconTwitter.png" alt="Twitter">
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="script.js" defer></script>
 </body>
+
 </html>
