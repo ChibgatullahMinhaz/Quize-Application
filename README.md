@@ -1,16 +1,19 @@
-[Live Link] (https://chibgatullahminhaz.github.io/Quize-Application/)
 
-
-# Welcome💕🥰
+# Welcome💕🥰 to the Quiz Application
 
 # What working this Project
- ## set your Today three goals and complete those goals. and how much you completed you see on progress bar.
+ ## This Quiz application for Front-End Developer Intervew jobs Preparation. they are have 50 questions.which Questions regularly ask in interviews . 
 
 ## Key Features
  ##### Fully Responsive
   ##### Fully Functional 
-   ##### implement localStorage
+  ##### implement localStorage
+  ##### bacground Sound
+  ##### wrong and Right answer sond , hilight answer
 
 
-   ## [Live Link](https://chibgatullahminhaz.github.io/Focus-on-Today/)
+   
+
+
+   ## [Live Demo](https://chibgatullahminhaz.github.io/Quize-Application/)
 
