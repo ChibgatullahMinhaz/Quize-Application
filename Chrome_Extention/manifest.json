@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Quiz App Extension",
+  "version": "1.0",
+  "description": "This Quiz app for front end developer intervew preparation",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}

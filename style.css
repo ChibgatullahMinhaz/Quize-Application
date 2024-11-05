@@ -64,10 +64,14 @@ button {
     color: #fff;
     font-weight: bolder;
     font-size: 1.5rem;
+    transition: transform 0.1s ease-in-out;
+
 }
 
 button:hover {
     cursor: pointer;
+    transform: scale(1);
+
 }
 
 #exitQuizBtn, #nextBtn {
@@ -112,6 +116,25 @@ button:hover {
 .answerBtn.wrong {
     background-color: #e63946;
     color: #fff;
+}
+@keyframes correctAnswer {
+    0% { background-color: #32cc33; }
+    50% { background-color: yellow; }
+    100% { background-color: #32cc33; }
+}
+
+@keyframes wrongAnswer {
+    0% { background-color: #e63946; }
+    50% { background-color: #ff4b5c; }
+    100% { background-color: #e63946; }
+}
+
+.answerBtn.correct {
+    animation: correctAnswer 1s ease-in-out;
+}
+
+.answerBtn.wrong {
+    animation: wrongAnswer 1s ease-in-out;
 }
 
 #timer {
