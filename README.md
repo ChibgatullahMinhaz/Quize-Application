@@ -10,6 +10,7 @@
   ##### implement localStorage
   ##### bacground Sound
   ##### wrong and Right answer sond , hilight answer
+  ##### Also Chrome extentions
 
 
    
